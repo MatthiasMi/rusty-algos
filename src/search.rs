@@ -1,5 +1,5 @@
 /// `binary_search` requires `PartialEq` for checking `<`, and
-///  returns index of t in (asc) sorted list `L = [L_1,...]`, else `None`.
+///  returns index of `t` in (asc) sorted list `L = [L_1,...]`, else `None`.
 pub(crate) fn binary_search<T: Ord>(t: &T, list: &[T]) -> Option<usize> {
     let mut left = 0;
     let mut right = list.len();
@@ -21,7 +21,7 @@ pub(crate) fn binary_search<T: Ord>(t: &T, list: &[T]) -> Option<usize> {
 }
 
 /// `linear_search` requires `PartialEq` for checking `==` and returns 
-/// the index of t in list, else `None`.
+/// the index of `t` in list, else `None`.
 pub(crate) fn linear_search<T: PartialEq>(t: &T, list: &[T]) -> Option<usize> {
     list.iter().position(|x| x == t)
 }

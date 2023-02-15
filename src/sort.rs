@@ -12,7 +12,7 @@ pub(crate) fn insertion_sort<T: Ord>(list: &mut [T]) {
 }
 
 
-/// `merge_sort` divides in the middle, conquers the left list
+/// `merge_sort` divides in the middle, conquers the left list,
 /// then the right list, and merges the result into a new list.
 pub(crate) fn merge_sort<T: Ord + Copy>(list: &[T]) -> Vec<T> {
     if list.len() < 2 { return list.to_vec(); }
@@ -43,7 +43,7 @@ fn merge<T: Ord>(L: &mut Vec<T>, R: &mut Vec<T>) -> Vec<T> {
 
 /// `quick_sort` follows the "divide-and-conquer"-strategy.
 /// It picks a pivot element `p` which splits the list in two.
-/// Then put p at its correct position in `L`, swap all
+/// It then puts `p` at its correct position in `L`, swaps all
 /// smaller elements before, and all those greater after `p`.
 pub(crate) fn quick_sort<T: Ord>(list: &mut [T]) {
     if list.len() < 2 { return; }  //  Leave recursion
