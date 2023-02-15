@@ -1,0 +1,14 @@
+[package]
+name = "rusty-algos"
+version = "0.0.7"
+edition = "2021"
+
+authors = ["MatthiasMi"]
+repository = "https://github.com/MatthiasMi/rusty-algos"
+readme = "Readme.md"
+
+description = "A re-implementation of basic data structures and algorithms."
+keywords = ["data structures", "graph algorithms", "sorting", "searching"]
+categories = ["algorithms", "mathematics", "computer science"]
+
+[dependencies]
